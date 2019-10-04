@@ -5,7 +5,7 @@ function updateFilterSieve() {
             filters.push($(this).data('filterSieve'));
         }
     })
-    $("pre").html(`if anyof(\n  ${filters.join(",\n  ")}\n) {\n  redirect :copy "handle@domain"\n}`);
+    $("pre").html(`if anyof(\n  ${filters.join(",\n  ")}\n) {\n  redirect :copy "handle@domain";\n}`);
 }
 
 function toggleMode(e) {
